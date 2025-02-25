@@ -17,11 +17,11 @@ class CardService
 
     public function registerCard($userId, $cardDetails)
     {
-        // 📌 Kullanıcı ID ve kart bilgilerini doğrula
+        
         PaymentValidator::validateUserId($userId);
         PaymentValidator::validateCardDetails($cardDetails);
 
-        // 📌 API isteği gönder
+      
         $response = $this->processor->makeRequest('/api/card/register', [
             "cardDetails" => $cardDetails
         ], $userId);
@@ -35,7 +35,7 @@ class CardService
 
     public function listCards($userId)
     {
-        // 📌 Kullanıcı ID doğrulaması
+  
         PaymentValidator::validateUserId($userId);
 
         return $this->processor->makeRequest('/api/card/list', [], $userId);
