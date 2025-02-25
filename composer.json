@@ -3,7 +3,8 @@
     "description": "A simple payment SDK for CodeIgniter 4",
     "type": "library",
     "license": "MIT",
-     "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "peace1313/g-payment-sdk": "dev-main",
     "autoload": {
         "psr-4": {
