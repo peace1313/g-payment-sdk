@@ -1,5 +1,22 @@
 {
+    "name": "peace1313/g-payment-sdk",
+    "description": "A simple payment SDK for CodeIgniter 4",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Peace1313\\GPaymentSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "peace",
+            "email": "b_guc@hotmail.com"
+        }
+    ],
     "require": {
+        "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.7"
     }
 }
+📌 Bu y
