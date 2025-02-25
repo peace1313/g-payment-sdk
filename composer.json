@@ -4,6 +4,7 @@
     "type": "library",
     "license": "MIT",
      "minimum-stability": "stable",
+    "peace1313/g-payment-sdk": "dev-main",
     "autoload": {
         "psr-4": {
             "Peace1313\\GPaymentSdk\\": "src/"
