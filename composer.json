@@ -12,18 +12,12 @@
     },
     "authors": [
         {
-            "name": "peace",
-            "email": "b_guc@hotmail.com"
+            "name": "Peace",
+            "email": ""
         }
     ],
     "require": {
         "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.7"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/peace1313/g-payment-sdk.git"
-        }
-    ]
+    }
 }
