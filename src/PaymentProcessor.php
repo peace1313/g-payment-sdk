@@ -7,7 +7,7 @@ use GuzzleHttp\Exception\RequestException;
 use Peace1313\GPaymentSdk\Config\Config;
 use Peace1313\GPaymentSdk\Exception\PaymentException;
 
-class PaymentProcess
+class PaymentProcessor
 {
     private Client $client;
     private string $apiUrl;
