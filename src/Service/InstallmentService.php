@@ -14,12 +14,13 @@ class InstallmentService
         $this->processor = $processor;
     }
 
-    public function getInstallmentOptions(string $userId, string $cardBin)
+    public function getInstallmentOptions(  array $cardBin)
     {
-        return $this->processor->makeRequest('/api/inquiry/installment', [
-            "acquirer" => ["bankId" => Config::BANK_ID],
+        return $this->processor->makeRequest( '/api/inquiry/installment',
+            [
+            "acquirer" => ['bankId'=>$cardBin['bankId']],
             "firmSwtId" => Config::SWT_ID,
-            "cardBin" => $cardBin
-        ], $userId);
+            "cardBin" => $cardBin['cardBin'],
+        ]  );
     }
 }

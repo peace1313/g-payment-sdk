@@ -6,7 +6,7 @@ use Peace1313\GPaymentSdk\PaymentProcessor;
 use Peace1313\GPaymentSdk\Validator\PaymentValidator;
 use Peace1313\GPaymentSdk\Exception\PaymentException;
 
-class CardService
+class refundService
 {
     private $processor;
 
